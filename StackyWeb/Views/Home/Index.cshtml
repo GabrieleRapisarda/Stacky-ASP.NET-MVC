@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="Shoe1">
+    <img class="S3_back" src="~/images/homeImg/S3.png" />
+    <img class="S2_back" src="~/images/homeImg/S2.png" />
+
+    <div class="ModelName">Nike Dunk Low "Lunar New Year"</div>
+
+    <div class="BigContainer">
+        <div class="sx-cnt">
+            <div class="ManShoe">Man’s Shoe </div>
+            <div class="Description">Segna punti importanti con questo classico leggendario. Unione perfetta di comfort per il parquet e stile per il tempo libero, questo modello originale da basket unisce pelle e morbidi strati esterni in pelle scamosciata per uno stile che non passa inosservato. Le unità Nike Air nascoste e la struttura resistente stile anni Ottanta offrono il comfort che conosci e ami.</div>
+            <div class="Slidershoe">
+                <div id="t1" class="SliderBox">
+                    <img  src="~/images/homeImg/S1.png" />
+                    <div class="LineUnderTiny"></div>
+                </div>
+                <div id="t2" class="SliderBox">
+                    <img src="~/images/homeImg/S2.png" />
+                    <div id="hidden" class="LineUnderTiny"></div>
+                </div>
+                <div id="t3" class="SliderBox" onclick="swap">
+                    <img src="~/images/homeImg/S3.png" />
+                    <div id="hidden" class="LineUnderTiny"></div>
+                </div>
+            </div>
+
+            <div class="Price">199$</div>
+            <div class="BlueButton">
+                <svg height="25px" id="Layer_1" style="enable-background:new 0 0 64 64;" fill="white" viewBox="0 0 64 64" xml:space="preserve"><g><path d="M56.262,17.837H26.748c-0.961,0-1.508,0.743-1.223,1.661l4.669,13.677c0.23,0.738,1.044,1.336,1.817,1.336h19.35   c0.773,0,1.586-0.598,1.815-1.336l4.069-14C57.476,18.437,57.036,17.837,56.262,17.837z" /><circle cx="29.417" cy="50.267" r="4.415" /><circle cx="48.099" cy="50.323" r="4.415" /><path d="M53.4,39.004H27.579L17.242,9.261H9.193c-1.381,0-2.5,1.119-2.5,2.5s1.119,2.5,2.5,2.5h4.493l10.337,29.743H53.4   c1.381,0,2.5-1.119,2.5-2.5S54.781,39.004,53.4,39.004z" /></g><g /><g /><g /><g /><g /><g /></svg>
+                <div class="text">Buy</div>
+            </div>
+        </div>
+        <div class="dx-cnt">
+            <div class="BigImgCtn">
+                <img src="~/images/homeImg/S1.png" class="BigShoe" />
+                <div class="BigImgShadow"></div>
+            </div>
+            <form id="nextShoe" class="BlueButton">
+                <div class="text">Next</div>
+                <svg height="25px" viewBox="0 0 96 96" fill="white"><title /><path d="M69.8437,43.3876,33.8422,13.3863a6.0035,6.0035,0,0,0-7.6878,9.223l30.47,25.39-30.47,25.39a6.0035,6.0035,0,0,0,7.6878,9.2231L69.8437,52.6106a6.0091,6.0091,0,0,0,0-9.223Z" /></svg>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    const next = document.getElementById("nextShoe");
+    console.log(next)
+
+    function handler(event) {
+        console.log(event);
+    }
+
+    next.addEventListener('click', handler);
+
+   
+</script>
+

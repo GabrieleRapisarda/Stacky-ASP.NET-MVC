@@ -1,0 +1,38 @@
+﻿@model List<Shoe>
+
+@if (TempData["Message"] != null)
+{
+	
+	<div class="alert alert-info" role="alert">
+		@TempData["Message"]
+	</div>
+}
+<h1>Lista scarpe coming soon</h1>
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Model</th>
+			<th>Price</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var x in Model)
+		{
+			<tr>
+				<td>@x.Id</td>
+				<td>@x.ModelName</td>
+				<td>@x.Price</td>
+				<th>
+
+					<a class="btn btn-primary" asp-controller="Shoe" asp-action="Upsert" asp-route-id="@x.Id"><i class="bi bi-pencil-square"></i>Edit</a>
+					<a class="btn btn-danger" asp-controller="Shoe" asp-action="Delete" asp-route-id="@x.Id"><i class="bi bi-trash-fill"></i>Remove</a>
+				</th>
+			</tr>
+			
+		}
+		
+	</tbody>
+
+</table>

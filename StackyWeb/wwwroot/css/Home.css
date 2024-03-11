@@ -1,0 +1,289 @@
+﻿#hidden{
+    display:none;
+}
+
+html::-webkit-scrollbar {
+    display:none;
+}
+
+/* -----------------HEADER------------------- */
+
+header {
+    
+    padding: 10px;
+    justify-content: space-evenly;
+    gap:20%;
+    align-items: center;
+    display: flex;
+}
+
+.FrameNav {
+    height: 26px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 72px;
+    display: flex;
+}
+
+.MenuNavigation {
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    display: flex;
+}
+
+.MenuNavigation a {
+    text-decoration:none;
+    color: #3059C3;
+    font-size: 24px;
+    font-family: Archivo Black;
+    font-weight: 400;
+    letter-spacing: 4.08px;
+    word-wrap: break-word;
+}
+
+
+/* -----------------FOOTER-------------------- */
+footer {
+    padding-left:10px;
+    padding-right:10px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex
+}
+
+.Madeby {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: flex;
+}
+
+.MadeByGabrieleRapisarda {
+    color: #3059C3;
+    font-size: 16px;
+    font-family: Public Sans;
+    font-weight: 400;
+    letter-spacing: 2.72px;
+    word-wrap: break-word;
+}
+
+.Licon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.Licon svg {
+    width: 24px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    fill: #3059C3;
+}
+
+.Termspolicy {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    display: flex;
+}
+
+.Termspolicy a {
+    text-decoration: none;
+    color: #3059C3;
+    font-size: 16px;
+    font-family: Public Sans;
+    font-weight: 400;
+    letter-spacing: 2.72px;
+    word-wrap: break-word;
+}
+
+/* -----------------BODY-------------------- */
+.S2_back {
+    z-index: -1;
+    width: 123px;
+    height: 65px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    transform: rotate(31deg);
+    transform-origin: 0 0;
+}
+
+.S3_back {
+    z-index:-1;
+    width: 124px;
+    height: 57px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotate(-31deg);
+    transform-origin: 0 0;
+}
+
+
+
+
+.Shoe1 {
+    z-index: -2;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #FFFEFE;
+    box-shadow: 6px 6px 6px #A6A3C7;
+    border-radius: 8px;
+}
+
+
+.ModelName {
+    color: black;
+    width:100%;
+    text-align:center;
+    font-size: 6em;
+    font-family: Bebas Neue;
+    font-weight: 400;
+    letter-spacing: 5.64px;
+    word-wrap: break-word;
+}
+
+.ManShoe {
+    color: black;
+    font-size: 20px;
+    font-family: Public Sans;
+    font-weight: 700;
+    letter-spacing: 3.40px;
+    word-wrap: break-word;
+}
+
+.BigContainer {
+    display: flex;
+    height: auto;
+}
+
+.sx-cnt {
+    
+    padding-top:10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    gap: 30px;
+}
+.SliderBox img {
+    height: 65px;
+}
+
+.Price {
+    width: fit-content;
+    color: black;
+    font-size: 20px;
+    font-family: Public Sans;
+    font-weight: 700;
+    letter-spacing: 3px;
+    
+}
+
+.Description {
+    width: 525px;
+    text-align:center;
+    color: black;
+    font-size: 16px;
+    font-family: Average Sans;
+    font-weight: 400;
+    letter-spacing: 2.72px;
+    word-wrap:break-word;
+}
+
+.Slidershoe {
+    height: 68px;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    
+}
+
+.SliderBox:hover{
+    cursor:pointer;
+}
+
+.SliderBox{
+    
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.LineUnderTiny {
+    width: 70%;
+    display:flex;
+    align-self:center;
+    height: 0px;
+    border: 2px rgba(47.95, 89.14, 195.06, 0.77) solid;
+    border-radius:6px;
+}
+
+
+.BlueButton {
+    width:fit-content;
+    height: 44px;
+    padding: 10px;
+    background: #3059C3;
+    box-shadow: 5px 5px 4px #C2BFDA;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.BlueButton .text {
+    color: white;
+    font-size: 24px;
+    font-family: Public Sans;
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-wrap: break-word;
+}
+
+.dx-cnt {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 50px;
+    flex-grow: 1;
+}
+
+.BigImgCtn {
+    
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    justify-items:center;
+    position: relative;
+}
+
+.BigShoe {
+
+    width: 500px;
+    transform: rotate(-10deg);
+}
+
+.BigImgShadow {
+    display:flex;
+    align-self:center;
+    
+    width: 407px;
+    height: 24px;
+    background: radial-gradient(ellipse at center, #DCDBEB 10%, rgba(255, 219, 235, 0) 70%);
+    border-radius: 10px;
+}
+
+
+
+
